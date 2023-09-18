@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Objects</title>
+</head>
+
+<body>
+    <h4>An object groups multiple values together</h4>
+    <p><a href="https://supersimple.dev/projects/objects/" target="_blank">Click</a> for project</p>
+    <br>
+    <p>inside an object we can save any type of value</p>
+
+    <script>
+        /*      
+                const product = {
+                    // Property Value Pair
+                    name: 'socks',
+                    price: 1090
+                };
+                console.log(product);
+                        // dot notation
+                console.log(product.name);
+                console.log(product.price);
+        
+                product.name = 'cotton socks';
+                console.log(product);
+        
+                product.newProperty = true;
+                console.log(product);
+                delete product.newProperty;
+                console.log(product);
+        */
+
+        const product2 = {
+            name: 'shirt',
+            'delivery-time': '1 day',
+            rating: {
+              stars: 4.5,
+              count: 87
+            },
+            fun: function function1() {
+                console.log('function inside object');
+            }
+            // functions are also values
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);
+
+        console.log(product2.rating.count);
+
+        product2.fun();
+        console.log(typeof console.log); // = method
+
+
+
+    </script>
+</body>
+
+</html>
